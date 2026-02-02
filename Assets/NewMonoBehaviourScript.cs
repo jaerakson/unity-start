@@ -80,6 +80,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
         bool isEndTutorial = level >10 ;
         Debug.Log("튜토리얼이 끝난 용사입니까?" + isEndTutorial); 
 
+        int health = 30;
+        int mana =25;
+        // bool isBadCondition = health <= 50 && mana <=20 ;
+        // Debug.Log("용사의 상태가 나쁜가요?" + isBadCondition);
+        bool isBadCondition = health <= 50 || mana <=20 ;
+        Debug.Log("용사의 상태가 나쁜가요?" + isBadCondition);
+
+        string condition = isBadCondition ? "나쁨":"좋음";
+
+
+
     } 
    
 }
